@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-23T12:00:00Z",
+  "system": {
+    "os": "Darwin",
+    "os_release": "24.0.0",
+    "architecture": "arm64",
+    "cpu_count_physical": 8,
+    "cpu_count_logical": 8,
+    "total_ram_gb": 8.0,
+    "available_ram_gb": 4.25,
+    "python_version": "3.12.5"
+  },
+  "config": {
+    "runs": 3,
+    "warmup": 1,
+    "host": "http://localhost:11434",
+    "models": [
+      "llama3.2:1b",
+      "phi3:mini"
+    ]
+  },
+  "summaries": [
+    {
+      "model": "llama3.2:1b",
+      "sample_count": 12,
+      "avg_ttft_ms": 82.4,
+      "min_ttft_ms": 76.1,
+      "max_ttft_ms": 94.8,
+      "avg_total_time_sec": 6.32,
+      "avg_decode_tps": 41.82,
+      "avg_e2e_tps": 40.51,
+      "peak_ram_mb": 1384.2,
+      "avg_cpu_percent": 64.2,
+      "peak_cpu_percent": 88.5
+    },
+    {
+      "model": "phi3:mini",
+      "sample_count": 12,
+      "avg_ttft_ms": 174.6,
+      "min_ttft_ms": 162.3,
+      "max_ttft_ms": 198.1,
+      "avg_total_time_sec": 12.45,
+      "avg_decode_tps": 21.38,
+      "avg_e2e_tps": 20.56,
+      "peak_ram_mb": 2426.8,
+      "avg_cpu_percent": 78.6,
+      "peak_cpu_percent": 94.1
+    }
+  ],
+  "runs": [
+    {
+      "prompt_id": "reasoning_logic",
+      "category": "Reasoning",
+      "model": "llama3.2:1b",
+      "run_index": 1,
+      "ttft_ms": 84.1,
+      "prompt_eval_ms": 32.4,
+      "total_time_sec": 4.82,
+      "eval_count": 198,
+      "decode_tps": 42.1,
+      "e2e_tps": 41.08,
+      "peak_ram_mb": 1378.0,
+      "avg_cpu_percent": 65.1,
+      "peak_cpu_percent": 87.2,
+      "response_text": "When the two trains meet, they are at the exact same location along the track. Therefore, both trains are equidistant from Chicago."
+    },
+    {
+      "prompt_id": "reasoning_logic",
+      "category": "Reasoning",
+      "model": "phi3:mini",
+      "run_index": 1,
+      "ttft_ms": 178.2,
+      "prompt_eval_ms": 54.1,
+      "total_time_sec": 9.42,
+      "eval_count": 196,
+      "decode_tps": 21.6,
+      "e2e_tps": 20.81,
+      "peak_ram_mb": 2415.5,
+      "avg_cpu_percent": 79.4,
+      "peak_cpu_percent": 93.8,
+      "response_text": "At the moment they meet, both trains are in the exact same physical spot. Therefore, neither is closer; they are at identical distances from Chicago."
+    }
+  ]
+}

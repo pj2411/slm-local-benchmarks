@@ -1,0 +1,22 @@
+[
+  {
+    "id": "reasoning_logic",
+    "category": "Reasoning",
+    "prompt": "A train leaves Chicago heading to New York at 60 mph. An hour later, another train leaves New York heading to Chicago at 80 mph. The distance between the cities is 780 miles. When they meet, which train is closer to Chicago? Explain your reasoning briefly."
+  },
+  {
+    "id": "code_algorithm",
+    "category": "Code Generation",
+    "prompt": "Write a Python function `sliding_window_max(nums: list[int], k: int) -> list[int]` that finds the maximum value in each sliding window of size k using a deque. Include type hints and a brief complexity note."
+  },
+  {
+    "id": "summarization_dense",
+    "category": "Summarization",
+    "prompt": "Summarize the key advantages and hardware trade-offs of deploying quantized 4-bit Small Language Models (SLMs) on edge devices compared to server-hosted frontier LLMs in three concise bullet points."
+  },
+  {
+    "id": "instruction_extraction",
+    "category": "Information Extraction",
+    "prompt": "Extract the sensor ID, temperature reading in Celsius, and error code from the following log message: '[2026-10-23T04:12:09Z] WARN node_ctrl: Sensor SENS-409 reported 78.4 F with err_flag 0x04'. Output as clean JSON only."
+  }
+]
